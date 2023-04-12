@@ -1,8 +1,8 @@
 $(function () {
 
-  let currentHour;
+  let currentHour; //declaring currentHour
 
-
+  // This grabs your current local time and displays it in the desired format to the second.
   function getCurrentTime() {
     currentHour = dayjs().hour();
     $("#currentDay").text(dayjs().format("dddd, MMMM D, YYYY h:mm:ss a"));
@@ -12,6 +12,7 @@ $(function () {
   getCurrentTime();
 
 
+  // This saves the user input to local storage when the saveBtn is clicked.
   $(".saveBtn").click(function () {
     let timeblockHour = $(this).parent().attr("id");
 
@@ -21,6 +22,7 @@ $(function () {
   });
 
 
+  // This saves the time blocks to display as desired, differentiating from past, present, and future time slots.
   function setBlockColor () {
     let timeblocks = $(".time-block");
     timeblocks.each(function () {
@@ -38,6 +40,7 @@ $(function () {
   setBlockColor();
 
 
+  // This grabs the user input saved from local storage upon refreshing page to display.
   function getLocalStorage () {
     let inputs = $(".description");
     inputs.each(function (index) {
