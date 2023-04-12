@@ -1,7 +1,7 @@
 # 05 Third-Party APIs: Work Day Scheduler
 
 ## Description
-This daily planner allows the user to input their desired tasks for the day which is saved locally for them to review. The times/tasks are specified my color grey = past, red = present, green = future time slots. This application will increase productivity and organization for the day to day user. 
+This daily planner allows the user to input their desired tasks for the day which is saved locally for them to review. The times/tasks are specified by the following colors: Grey = past, red = present, green = future time slots. This application will increase productivity and organization for the day to day user. 
 
 ## User Story
 
